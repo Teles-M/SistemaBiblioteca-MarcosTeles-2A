@@ -1,18 +1,18 @@
 // Import das funções para utilizar na biblioteca
-import java.util.ArrayList;
+import java.util.Map; // Map armazena dados "chave-valor", ou seja, armaena uma chave única e seu respectivo valor.
+import java.util.HashMap; // HashMap é um estilo de Map
 
 public class Biblioteca {
     
     // Atributos da bilbioteca
-    private ArrayList<String> livros; // "livros" é uma lista que contém nomes das várias classes "Livro"
-    private ArrayList<String> usuarios; // Lista que contém classes "Usuario"
-    private ArrayList<String> administradores; // Lista que contém classes "Administrador"
+    private Map<Integer, Livro> livros; // Um Map "livros", que armazena o ISNB do livro e o restante da classe livro
+    private Map<Integer, Usuario> usuarios; // Um Map que armazenará o ID e o restante da classe usuário
+    private Map<Integer, Administrador> adms; // Armazenará admins
     
-    // GETTER
-    public void getLivros() {
-        for(String i:livros) { // Loop para percorrer a lista "Livros"
-            System.out.println(i); // Entrega o nome dos livros
-        }
-    }
-    
+    // Construtor
+    public Biblioteca() {
+        livros = new HashMap<>(); // criando o Map que irá conter os livros
+        usuarios = new HashMap<>();
+        adms = new HashMap<>();
+}
 }

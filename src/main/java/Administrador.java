@@ -14,11 +14,4 @@ public class Administrador extends Usuario {
         return cargo;
     }
     
-    //SETTER
-    public void setCargo(String novoCargo) {
-        if(novoCargo.equals(cargo) == false) {
-            this.cargo = novoCargo;
-        }
-    }
-    
 }

@@ -1,4 +1,4 @@
-// Essa classe é o herdador da classe "Administrador"
+// Essa classe é o herdador para a classe "Administrador"
 public class Usuario {
     
     // Atributos de cada usuário
@@ -22,23 +22,6 @@ public class Usuario {
     }
     public String getEmail() {
         return email;
-    }
-    
-    // SETTERS
-    public void setId(int novoId) {
-        if(novoId != id) {
-            this.id = novoId;
-        }
-    }
-    public void setNome(String novoNome) {
-        if(novoNome.equals(nome) == false) {
-            this.nome = novoNome;
-        }
-    }
-    public void setEmail(String novoEmail) {
-        if(novoEmail.equals(email) == false) {
-            this.email = novoEmail;
-        }
     }
     
 }

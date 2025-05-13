@@ -30,29 +30,12 @@ public class Livro {
     public int getAno() { // Pegar o ano
         return ano;
     }
-    public void getDisponibilidade() { // Verificar a disponibilidade do livro
+    public void isDisponivel() { // Verificar a disponibilidade do livro
         if (emprestado == false) {
             System.out.println("O livro esta disponivel.");
         }
         if (emprestado) {
             System.out.println("O livro ja foi emprestado.");
-        }
-    }
-    
-    // SETTERS
-    public void setTitulo(String novoTitulo) { // Mudar o título
-        if(novoTitulo.equals(titulo) == false) { // .equals() compara Strings e retorna um valor booleano
-            this.titulo = novoTitulo; // Se o valor retornado for falso, ele fará isso
-        }
-    }
-    public void setAutor(String novoAutor) { // Mudar autor
-        if(novoAutor.equals(autor) == false) {
-            this.autor = novoAutor;
-        }
-    }
-    public void setAno(int novoAno) { // Mudar ano
-        if(novoAno != ano) {
-            this.ano = novoAno;
         }
     }
     
