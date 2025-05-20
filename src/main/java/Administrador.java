@@ -5,8 +5,9 @@ public class Administrador extends Usuario {
     private String cargo;
 
     // Construtor "super" para herança
-    public Administrador(int id, String nome, String email) {
-        super(id, nome, email);
+    public Administrador(String nome, String email, String cargo) {
+        super(nome, email);
+        this.cargo = cargo;
     }
     
     // GETTER

@@ -30,13 +30,13 @@ public class Livro {
     public int getAno() { // Pegar o ano
         return ano;
     }
-    public void isDisponivel() { // Verificar a disponibilidade do livro
-        if (emprestado == false) {
-            System.out.println("O livro esta disponivel.");
-        }
-        if (emprestado) {
-            System.out.println("O livro ja foi emprestado.");
-        }
+    public boolean isEmprestado() { // Verificar a disponibilidade do livro
+        return emprestado;
+    }
+    
+    // Método para trocar a disponibilidade do livro
+    public void emprestar() {
+        this.emprestado = true;
     }
     
 }

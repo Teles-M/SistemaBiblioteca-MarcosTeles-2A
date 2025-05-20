@@ -2,15 +2,17 @@
 public class Usuario {
     
     // Atributos de cada usuário
+    private static int proximoId = 1;
     private int id;
     private String nome;
     private String email;
     
     // Construtor
-    public Usuario(int id, String nome, String email) {
+    public Usuario(String nome, String email) {
         this.id = id;
         this.nome = nome;
         this.email = email;
+        this.id = proximoId++;
     }
     
     // GETTERS
